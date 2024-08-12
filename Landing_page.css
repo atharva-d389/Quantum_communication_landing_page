@@ -1,0 +1,386 @@
+/* for background section */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+.video_section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    pointer-events: none; 
+}
+
+/* for headline section  */
+
+@keyframes moveFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply styles to the headline */
+
+#headline {
+    color: white;
+    font-size: xx-large;
+    font-weight: 160px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+}
+
+#headline h1 {
+    animation: moveFromLeft 1s ease-out forwards; 
+}
+
+#headline p {
+    animation: moveFromRight 1s ease-out forwards;
+}
+
+/* for buttons */
+.click {
+    transform: translate(220%, 500px); 
+    position: absolute;
+    z-index: 10;
+    animation-name: click;
+    animation-duration: 5s;
+}
+
+@keyframes click {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* for about section */
+#section2 {
+    background-color: rgb(4, 13, 27);
+    height: 720px;
+    width: 100%;
+}
+
+.title {
+    color: white;
+    padding: 20px;
+    transform: translate(5px, 0px);
+    text-align: center;
+}
+
+.sub_title {
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+    margin-left: 31%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.img {
+    height: 500px;
+    width: 500px;
+    margin-right: 20px;
+    position: relative;
+}
+
+#pic {
+    width: 100%;
+    max-width: 820px;
+    height: auto;
+}
+
+.layout {
+    width: 870px;
+    height: 550px;
+    margin-left: 1%;
+    position: relative; 
+}
+
+.Progress, .info {
+    height: 530px;
+    width: 870px;
+    color: white;
+    padding: 10px;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.Progress {
+    font-size: xx-large;
+}
+
+.info {
+    border: 2px solid transparent;
+    opacity: 0; 
+    z-index: -1; 
+    font-size: x-large;
+    padding: 10px;
+}
+
+.fade-in {
+    opacity: 1;
+    z-index: 1; 
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* for innovation */
+.innovation {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(4, 13, 27);
+    color: #fff;
+}
+
+.innovation h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#carouselExampleIndicators {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 50%;
+    max-width: 500px;
+    height: 150px;
+    max-height: 100%;
+}
+
+.carousel-inner h5,
+.carousel-inner p {
+    color: #333;
+}
+
+.carousel-item {
+    text-align: center;
+}
+/* application */
+.section3 {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(4, 13, 27);
+    color: white;
+    padding: 20px;
+}
+
+.section3 h1 {
+    margin-left: 42%;
+}
+
+.c1 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+
+.mu, .bank, .health, .govt {
+    height: 350px;
+    width: 350px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.mu:hover, .bank:hover, .health, .govt:hover {
+    transform: translate(0px, -3px);
+}
+
+.mu h3, .bank h3, .health h3, .govt {
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* for understanding */
+.section4 {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(4, 13, 27);
+}
+
+.bg {
+    background-color: #f5f5f5;
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    transform: translate(73%, 20%);
+}
+
+.bg h1 {
+    color: black;
+    font-size: xx-large;
+    padding: 10px;
+    text-align: center;
+}
+
+/* for contact */
+.container1 {
+    background-color: rgb(4, 13, 27); /* Background color for the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically */
+}
+
+.form {
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 20px;
+    height: 700px;
+    width: 100%;
+    padding: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 1200px) {
+    #headline {
+        font-size: x-large;
+        max-width: 700px;
+    }
+    .layout, .Progress, .info {
+        width: 700px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img, .mu, .bank, .health, .govt {
+        width: 80%;
+        height: auto;
+    }
+    .mu, .bank, .health, .govt {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #headline {
+        font-size: large;
+        max-width: 90%;
+    }
+    .layout, .Progress, .info {
+        width: 90%;
+    }
+    .img {
+        height: auto;
+        width: 90%;
+    }
+    .sub_title {
+        margin-left: 0;
+        text-align: center;
+    }
+    .bg {
+        transform: translate(0%, 20%);
+        width: 90%;
+    }
+    .mu, .bank, .health, .govt {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .layout, .Progress, .info {
+        width: 100%;
+    }
+    #headline {
+        font-size: medium;
+    }
+    .title, .sub_title, .mu h3, .bank h3, .health h3, .govt h3, .bg h1, .section3 h1 {
+        font-size: medium;
+    }
+    .bg {
+        width: 100%;
+        height: auto;
+        transform: translate(0%, 20%);
+    }
+    .mu, .bank, .health, .govt {
+        margin: 0 auto;
+    }
+}

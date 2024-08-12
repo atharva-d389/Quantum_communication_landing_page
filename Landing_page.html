@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Communication</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Landing_page.css">
+    <script src="./page.js"></script>
+    <script src="./about.js"></script>
+    <style>
+        body.scrollable {
+            overflow: auto;
+        }
+        body.non-scrollable {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="non-scrollable">
+    <div id="section">
+        <div class="video_section">
+            <video id="video" src="./images/earth.mp4" autoplay loop muted></video>
+    
+            <div id="headline">
+                <h1 style="font-weight: 80px;">
+                    QUANTUM COMMUNICATION
+                </h1>
+                <p style="font-weight: 24px;">
+                    "Revolutionizing Connectivity with Quantum Precision"
+                </p>
+            </div>
+    
+            <div class="click">
+                <button type="button" class="btn btn-primary" style="width: 280px;" onclick="showMore()">Learn More</button>
+                <br>
+                <button type="button" class="btn btn-danger" style="margin-top: 20px;width: 280px;" onclick="scrollToContact()">Contact Us</button>
+            </div>
+    
+        </div>
+    </div>
+    <div id="section2" class="container-fluid">
+        <!-- Add an ID for scrolling purposes -->
+        <div class="title">
+            <h1>
+                About Us
+            </h1>
+        </div>
+        <div class="sub_title">
+            <p>
+                "Revolutionizing Connectivity with Quantum Precision"
+            </p>
+        </div>
+        <div class="container">
+            <div class="img">
+                <img id="pic" src="images/images_4.jpeg" alt="Slideshow Image">               
+            </div>
+            
+            <div class="layout">
+                <div class="Progress">
+                    <ul>
+                        <li>
+                            <label for="label">2024-Inception</label>
+                            <br>
+                            <p>Our journey began with a vision to leverage quantum mechanics for secure communications.</p>
+                        </li>
+                        <li>
+                            <label for="label">2024-Breakthrough</label>
+                            <br>
+                            <p>Developed Quantum Key Distribution system on the basis of ISRO's achievement and help from the engineers working on the project</p>
+                        </li>
+                        <li>
+                            <label for="label">2026-Nationwide Expansion</label>
+                            <br>
+                            <p>Wish to expand our quantum network infrastructure across India.</p>
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="info">
+                    <p>
+                        At Quantum Communication Pvt. Ltd., we are pioneers in the realm of quantum communication, dedicated to transforming the way the world connects with unparalleled security and efficiency. As one of the quantum communication companies in INDIA, our cutting-edge solutions are designed to address the challenges of modern communication with groundbreaking technology.
+                    </p>
+                    <p>
+                        Our approach to quantum communication involves the development and deployment of advanced technologies such as Quantum Key Distribution (QKD) and Quantum Repeaters. These technologies ensure that information is encrypted and transmitted with the highest level of security, leveraging the unique properties of quantum states to safeguard data from interception and tampering.
+                    </p>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <div class="innovation">
+        <h1>Our Innovation</h1>
+        <div class="background">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100">
+                            <h5>Quantum Key Distribution</h5>
+                            <p>Secure your data with the most advanced quantum encryption technology.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <h5>Entanglement-Based Security</h5>
+                            <p>Harness the power of quantum entanglement for unbreakable security.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <h5>Quantum Cryptography</h5>
+                            <p>Experience the future of encryption with our quantum cryptography solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="applications" class="section3">
+        <h1>Applications</h1>
+        <div class="c1">
+            <div class="mu">
+                <img src="./images/ml.webp" alt="" style="height: 250px;width: 325px;padding: 20px;margin-left: 10px;">
+                <h3>SAFE MILITARY COMMUNICATION</h3>
+            </div>
+            <div class="bank">
+                <img src="./images/bank.jpg" alt="" style="height: 250px;width: 325px;padding: 20px;margin-left: 10px;">
+                <h3>SAFE BANK TRANSACTIONS</h3>
+            </div>
+            <div class="health">
+                <img src="./images/health.jpeg" alt="" style="height: 250px;width: 325px;padding: 20px;margin-left: 10px;">
+                <h3>SAFE HEALTHCARE</h3>
+            </div>
+            <div class="govt">
+                <img src="./images/govt.webp" alt="" style="height: 250px;width: 325px;padding: 20px;margin-left: 10px;">
+                <h3>SAFE GOVT DATA TRANSFER</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="whatIsQuantumCommunication" class="section4">
+        <div class="bg">
+            <h1>What is Quantum Communication?</h1>
+            <iframe width="500" height="315" style="margin-left: 40px;" src="https://www.youtube.com/embed/xjcvRK9IEPI" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="contactSection" class="container1">
+        <div class="form" style="background-color: #ffffff; border-radius: 20px; height: 500px; width: 1200px; padding: 20px;">
+            <form action="" method="post">
+                <table class="table">
+                    <tr>
+                        <td style="font-size: 32px;text-align: center;">
+                            Contact US
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="name" class="form-label">NAME:</label>
+                            <br>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Email" class="form-label">Email:</label>
+                            <br>
+                            <input type="email" id="Email" placeholder="Enter your Email" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="description" class="form-label">MESSAGE:</label>
+                            <br>
+                            <textarea id="description" name="description" placeholder="Enter your message" class="form-control"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" class="btn btn-primary" style="margin-left: 40%;width: 200px;">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Quantum Communication Pvt. Ltd. is a pioneer in quantum communication, offering cutting-edge solutions for secure, efficient data transmission.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#section" class="text-white">Home</a></li>
+                        <li><a href="#section2" class="text-white">About Us</a></li>
+                        <li><a href="#applications" class="text-white">Applications</a></li>
+                        <li><a href="#whatIsQuantumCommunication" class="text-white">What is Quantum Communication?</a></li>
+                        <li><a href="#contactSection" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill"></i> 123 Quantum Road, Tech City, India</li>
+                        <li><i class="bi bi-telephone-fill"></i> +91 12345 67890</li>
+                        <li><i class="bi bi-envelope-fill"></i> contact@quantumcomm.in</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Quantum Communication Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        function showMore() {
+            document.body.classList.remove('non-scrollable');
+            document.body.classList.add('scrollable');
+            window.scrollTo(0, document.getElementById('section2').offsetTop);
+        }
+
+        function scrollToContact() {
+            document.body.classList.remove('non-scrollable');
+            document.body.classList.add('scrollable');
+            window.scrollTo(0, document.getElementById('contactSection').offsetTop);
+        }
+    </script>
+</body>
+</html>

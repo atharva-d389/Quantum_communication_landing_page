@@ -17,9 +17,61 @@
         body.non-scrollable {
             overflow: hidden;
         }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 20px; 
+            margin: 0 auto; 
+            padding: 10px 20px; 
+            width: 80%; 
+        }
+        .navbar-nav {
+            margin: 0 auto; 
+            
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffdd57; 
+        }
     </style>
 </head>
 <body class="non-scrollable">
+<!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Quantum Comm</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#applications">Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#whatIsQuantumCommunication">What is Quantum Communication?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactSection">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
     <div id="section">
         <div class="video_section">
             <video id="video" src="./images/earth.mp4" autoplay loop muted></video>
@@ -91,45 +143,49 @@
     </div>
 
     <div class="innovation">
-        <h1>Our Innovation</h1>
+        <h1 class="text-4xl font-bold">Our Innovation</h1>
         <div class="background">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
+            <div id="carouselExampleIndicators" class="carousel slide relative">
+                <div class="carousel-indicators absolute bottom-0 flex justify-center space-x-3">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="d-block w-100">
-                            <h5>Quantum Key Distribution</h5>
-                            <p>Secure your data with the most advanced quantum encryption technology.</p>
+                        <div class="d-block w-100 flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg animate__animated animate__fadeIn">
+                            <img src="./images/qkd.jpg.webp" alt="Quantum Key Distribution" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4">
+                            <h5 class="text-2xl text-white">Quantum Key Distribution</h5>
+                            <p class="text-white">Secure your data with the most advanced quantum encryption technology.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-block w-100">
-                            <h5>Entanglement-Based Security</h5>
-                            <p>Harness the power of quantum entanglement for unbreakable security.</p>
+                        <div class="d-block w-100 flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg animate__animated animate__fadeIn">
+                            <img src="./images/entangle.png" alt="Entanglement-Based Security" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4">
+                            <h5 class="text-2xl text-white">Entanglement-Based Security</h5>
+                            <p class="text-white">Harness the power of quantum entanglement for unbreakable security.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-block w-100">
-                            <h5>Quantum Cryptography</h5>
-                            <p>Experience the future of encryption with our quantum cryptography solutions.</p>
+                        <div class="d-block w-100 flex flex-col items-center p-4 bg-gray-800 bg-opacity-80 rounded-lg animate__animated animate__fadeIn">
+                            <img src="./images/crypt.png" alt="Quantum Cryptography" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4">
+                            <h5 class="text-2xl text-white">Quantum Cryptography</h5>
+                            <p class="text-white">Experience the future of encryption with our quantum cryptography solutions.</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev absolute top-0 bottom-0 left-0 flex items-center justify-center p-0 text-center" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next absolute top-0 bottom-0 right-0 flex items-center justify-center p-0 text-center" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
     </div>
+    
 
     <div id="applications" class="section3">
         <h1>Applications</h1>
@@ -152,6 +208,15 @@
             </div>
         </div>
     </div>
+    
+    <div class="section6">
+        <h2>ONGOING RESEARCHES IN WORLD</h2>
+        <div id="news-container" class="news">
+            <!-- News articles will be dynamically added here -->
+        </div>
+    </div>
+    
+    
 
     <div id="whatIsQuantumCommunication" class="section4">
         <div class="bg">
@@ -159,6 +224,26 @@
             <iframe width="500" height="315" style="margin-left: 40px;" src="https://www.youtube.com/embed/xjcvRK9IEPI" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
+
+    <section id="testimonials">
+        <div class="outer-container">
+          <h2>What Our Clients Say</h2>
+          <div class="inner-container">
+            <div class="testimonial-carousel">
+              <div class="testimonial-item">
+                <p>"The quantum communication technology provided by "Quantum comm" has revolutionized our data security. We’re seeing incredible performance improvements!"</p>
+                <p><strong>Jane Doe</strong>, CTO at [Quantum comm]</p>
+              </div>
+              <div class="testimonial-item">
+                <p>"Exceptional service and groundbreaking technology. [Quantum comm] is leading the way in quantum communication."</p>
+                <p><strong>John Smith</strong>, VP of R&D at [Quantum comm]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
 
     <div id="contactSection" class="container1">
         <div class="form" style="background-color: #ffffff; border-radius: 20px; height: 500px; width: 1200px; padding: 20px;">

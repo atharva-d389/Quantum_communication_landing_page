@@ -179,40 +179,85 @@ html, body {
     color: #fff;
 }
 
-.innovation h1 {
-    margin-bottom: 20px;
-    color: #fff;
-}
-
 .background {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
-    padding: 15px;
+    background-color: #1a202c;
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 75%;
     margin: 0 auto;
 }
 
 #carouselExampleIndicators {
-    background-color: #fff;
+    background-color: #2d3748;
     border-radius: 15px;
-    width: 50%;
-    max-width: 500px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     max-height: 100%;
 }
 
 .carousel-inner h5,
 .carousel-inner p {
-    color: #333;
+    color: #e2e8f0;
 }
 
 .carousel-item {
     text-align: center;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #4a5568;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #a0aec0;
+}
+
+.animate__animated.animate__fadeIn {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+#carouselExampleIndicators {
+    background-color: #2d3748;
+    border-radius: 15px;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    max-height: 100%;
+    overflow: hidden; /* Prevents overflow if the image is too large */
+}
+
+.carousel-item {
+    position: relative; /* Allows for positioning of text inside */
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 35.0%; /* Ensures the image covers the width of the container */
+    height: 10%; /* Ensures the image fills the height of the container */
+    /* object-fit: cover; Maintains aspect ratio and covers the container */
+    border-radius: 15px; /* Matches the carousel container */
+}
+
+.carousel-item .carousel-caption {
+    position: absolute; /* Allows positioning over the image */
+    bottom: 0; /* Positions text at the bottom of the carousel item */
+    left: 50%;
+    transform: translateX(-50%); /* Centers text horizontally */
+    padding: 20px; /* Adds some padding for readability */
+    color: #fff; /* Ensures text is visible on dark backgrounds */
+    text-align: center; /* Centers text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    border-radius: 10px; /* Matches the carousel styling */
+}
+
 /* application */
 .section3 {
     height: 500px;
@@ -251,6 +296,37 @@ html, body {
     text-align: center;
 }
 
+/* news api */
+.section6 {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(4, 13, 27);
+    color: white;
+    text-align: center;
+    overflow: hidden; /* Hide overflow from this section */
+}
+
+.news {
+    width: 90%;
+    background-color: rgba(255, 250, 250, 0.77);
+    height: 450px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    transform: translateX(60px);
+    overflow-y: auto;
+    box-sizing: border-box; 
+}
+
+.news-article {
+    width: 100%; 
+    margin-bottom: 20px; 
+    background-color: white; 
+    color: black; 
+    padding: 10px;
+    border-radius: 10px; 
+}
+
 /* for understanding */
 .section4 {
     height: 500px;
@@ -273,6 +349,76 @@ html, body {
     text-align: center;
 }
 
+/* General Styles for the Testimonial Section */
+/* General Styles for the Testimonial Section */
+#testimonials {
+    background-color:rgb(4, 13, 27); /* Light background for contrast */
+    padding: 50px 0;
+  }
+  
+  .outer-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .outer-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:white 
+  }
+  
+  .inner-container {
+    background-color: #fff; /* White background for the inner container */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 30px;
+  }
+  
+  .testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .testimonial-item {
+    background-color: #fff; /* White background for the testimonial items */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin: 0 15px;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-item p {
+    font-size: 1.1em;
+    color: #666; /* Slightly lighter text color for the testimonial */
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-item strong {
+    font-size: 1.2em;
+    color: #333; /* Dark color for the reviewer’s name */
+  }
+  
+  /* Optional Carousel Styling */
+  .testimonial-carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .testimonial-item {
+    scroll-snap-align: start;
+  }
+  
+  .testimonial-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+  }
+  
 /* for contact */
 .container1 {
     background-color: rgb(4, 13, 27); /* Background color for the section */

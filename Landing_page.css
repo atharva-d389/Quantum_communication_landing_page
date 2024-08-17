@@ -229,33 +229,32 @@ html, body {
     background-color: #2d3748;
     border-radius: 15px;
     width: 100%;
-    height: 500px; /* Adjust height as needed */
+    height: 500px;
     max-height: 100%;
-    overflow: hidden; /* Prevents overflow if the image is too large */
+    overflow: hidden; 
 }
 
 .carousel-item {
-    position: relative; /* Allows for positioning of text inside */
+    position: relative; 
     height: 100%;
 }
 
 .carousel-item img {
-    width: 35.0%; /* Ensures the image covers the width of the container */
-    height: 10%; /* Ensures the image fills the height of the container */
-    /* object-fit: cover; Maintains aspect ratio and covers the container */
-    border-radius: 15px; /* Matches the carousel container */
+    width: 35.0%;
+    height: 10%; 
+    border-radius: 15px; 
 }
 
 .carousel-item .carousel-caption {
-    position: absolute; /* Allows positioning over the image */
-    bottom: 0; /* Positions text at the bottom of the carousel item */
+    position: absolute; 
+    bottom: 0; 
     left: 50%;
-    transform: translateX(-50%); /* Centers text horizontally */
-    padding: 20px; /* Adds some padding for readability */
-    color: #fff; /* Ensures text is visible on dark backgrounds */
-    text-align: center; /* Centers text */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
-    border-radius: 10px; /* Matches the carousel styling */
+    transform: translateX(-50%); 
+    padding: 20px; 
+    color: #fff; 
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
 }
 
 /* application */
@@ -303,7 +302,7 @@ html, body {
     background-color: rgb(4, 13, 27);
     color: white;
     text-align: center;
-    overflow: hidden; /* Hide overflow from this section */
+    overflow: hidden; 
 }
 
 .news {
@@ -349,10 +348,10 @@ html, body {
     text-align: center;
 }
 
-/* General Styles for the Testimonial Section */
-/* General Styles for the Testimonial Section */
+
+/*  the Testimonial Section */
 #testimonials {
-    background-color:rgb(4, 13, 27); /* Light background for contrast */
+    background-color:rgb(4, 13, 27); 
     padding: 50px 0;
   }
   
@@ -369,9 +368,9 @@ html, body {
   }
   
   .inner-container {
-    background-color: #fff; /* White background for the inner container */
-    border-radius: 10px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 30px;
   }
   
@@ -383,9 +382,9 @@ html, body {
   }
   
   .testimonial-item {
-    background-color: #fff; /* White background for the testimonial items */
-    border-radius: 10px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     margin: 0 15px;
     max-width: 500px;
@@ -395,13 +394,13 @@ html, body {
   
   .testimonial-item p {
     font-size: 1.1em;
-    color: #666; /* Slightly lighter text color for the testimonial */
+    color: #666; 
     margin-bottom: 15px;
   }
   
   .testimonial-item strong {
     font-size: 1.2em;
-    color: #333; /* Dark color for the reviewer’s name */
+    color: #333; 
   }
   
   /* Optional Carousel Styling */
@@ -416,20 +415,20 @@ html, body {
   }
   
   .testimonial-carousel::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for a cleaner look */
+    display: none; 
   }
   
 /* for contact */
 .container1 {
-    background-color: rgb(4, 13, 27); /* Background color for the section */
+    background-color: rgb(4, 13, 27); 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Center vertically */
+    height: 100vh; 
 }
 
 .form {
-    background-color: #ffffff; /* White background for the form */
+    background-color: #ffffff; 
     border-radius: 20px;
     height: 700px;
     width: 100%;
@@ -449,7 +448,7 @@ html, body {
 }
 
 .btn-primary {
-    background-color: #007bff; /* Primary button color */
+    background-color: #007bff; 
     border: none;
     color: #fff;
     padding: 10px 20px;
@@ -458,7 +457,7 @@ html, body {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 /* Responsive Design Enhancements */
@@ -528,5 +527,101 @@ html, body {
     }
     .mu, .bank, .health, .govt {
         margin: 0 auto;
+    }
+}
+/* Careers Section */
+.careers-section {
+    background-color: rgb(4, 13, 27);
+    padding: 60px 20px;
+    color: white;
+}
+
+.careers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.careers-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Horizontal Job Cards Layout */
+.career-listings {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.career-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 30%; /* Adjust width for 3 cards on larger screens */
+    text-align: left;
+    transition: transform 0.3s ease;
+    flex-grow: 1; /* Cards grow uniformly */
+}
+
+.career-card:hover {
+    transform: translateY(-10px);
+}
+
+.career-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.career-location {
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.career-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-card {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .career-listings {
+        flex-direction: column;
     }
 }
